@@ -21,7 +21,8 @@ function App() {
   };
 
   return (
-    <section className='section-center'>
+    <section className='max-w-2xl mt-20 text-center mx-auto w-full'>
+ 
       <h3>tired of boring lorem ipsum?</h3>
       <ContentForm count={count} setCount={setCount} handleSubmit={handleSubmit} />
       <LoremText text={text} />

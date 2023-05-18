@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoremText = ({ text }) => {
   return (
-    <article className='lorem-text'>
+    <article className='mx-5 text-justify'>
       {text.map((item, index) => {
         return <p key={index}>{item}</p>;
       })}
