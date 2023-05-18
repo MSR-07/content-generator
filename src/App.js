@@ -3,6 +3,7 @@ import './App.css';
 import data from './data/content';
 import ContentForm from './components/ContentForm';
 import LoremText from './components/LoremText';
+import { Headings } from './components/theme/typography';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,8 +23,7 @@ function App() {
 
   return (
     <section className='max-w-2xl mt-20 text-center mx-auto w-full'>
- 
-      <h3>tired of boring lorem ipsum?</h3>
+    <Headings main_Heading>tired of boring lorem ipsum?</Headings>
       <ContentForm count={count} setCount={setCount} handleSubmit={handleSubmit} />
       <LoremText text={text} />
     </section>
